@@ -98,10 +98,24 @@ get ('/api/v1/tweets') {
     'Lista de Tweets!!!!'
 }
 
+----------------------------------------------------------- . . .
 # Explicar conceito de banco de dados
+
+# Instalação do mongodb: https://www.youtube.com/watch?v=aYRkF7sHrbk (VIDEO)
+
+https://www.mongodb.com/try/download/community  -> baixa o instalador
+
+# Vou clicando NEXT e desmarco a opção(quando aparecer) de "install MongoD as a Service"
+
+# Não esquecer de criar a pasta "data -> db" caso não for criada(na pasta root)
+
+# Para executar "ruby app.rb" com o mongo devo executar o mongod simultaneamente
+
+------------------------------------------------------------ . . .
+
 # Configuração da aplicação com um banco de dados. Vamos trabalhar com o mongoDb, logo vamos
-trabalhar com documentos, que é a forma na qual a informação é guaradada num banco de dados. No caso
-do mongo essa informação é guaradada no formato JSON (acho eu). Por tanto precisamos de uma gem(biblioteca)
+trabalhar com documentos, que é a forma na qual a informação é guardada num banco de dados. No caso
+do mongo essa informação é guardada no formato JSON (acho eu). Por tanto precisamos de uma gem(biblioteca)
 que saiba trabalhar bem com a abstração do banco de dados.
 Essa gem se chama "mogoid". Para baixá-la agora, usufruiremos da nossa nova técnica de ir no rubygems.org, procurar
 pela gem e metê-la no ficheiro Gemfile :) depois ao usar o bundler a biblioteca será baixada diretamente.
