@@ -128,9 +128,9 @@ no ficheiro "mongoid.config" criado:
 development:
     clients:
         default:
-        database: atwritter_api_dev # nome do banco de dados
-        hosts:
-            -localhost: 27017 # local que o banco de dados vai rodar
+            database: atwritter_api_dev # nome do banco de dados
+            hosts:
+                -localhost:27017 # local que o banco de dados vai rodar
 
 # Vamos agora para nosso arquivo app.ruby e adicionamos:
 
@@ -158,3 +158,5 @@ class Atweet
         field :likes, type: Integer, default: 0
 end
 
+-> Fazer brincadeirinha no irb (explicar o que é um intepretador de comandos)
+-> Mostrar que se eu tentar salvar no banco de dados sem executar o mongod, dá erro!
